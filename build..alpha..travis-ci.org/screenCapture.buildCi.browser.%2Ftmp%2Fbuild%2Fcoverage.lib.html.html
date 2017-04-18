@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-react-router-redux/react-router-redux/lib/sync.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-react-router-redux/node_modules/react-router-redux/lib/sync.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-react-router-redux">npmtest-react-router-redux (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-react-router-redux/react-router-redux/lib/sync.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-react-router-redux/node_modules/react-router-redux/lib/sync.js</span></h1>
     <h2>
         
         Statements: <span class="metric">9.09% <small>(6 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-react-router-redux/react-router-redux/lib/</a> &#187; sync.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-react-router-redux/node_modules/react-router-redux/lib/</a> » sync.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -530,14 +528,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 &nbsp;
-var _extends = Object.assign || <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function (target) {</span> <span class="cstat-no" title="statement not covered" >for (var i = 1; i &lt; arguments.length; i++) { <span class="cstat-no" title="statement not covered" >var source = arguments[i]; <span class="cstat-no" title="statement not covered" ></span>for (var key in source) { <span class="cstat-no" title="statement not covered" >if (Object.prototype.hasOwnProperty.call(source, key)) { <span class="cstat-no" title="statement not covered" >target[key] = source[key]; </span>} </span>} </span>} <span class="cstat-no" title="statement not covered" ></span>return target; </span>};</span>
+var _extends = Object.assign || <span class="fstat-no" title="function not covered"><span class="branch-1 cbranch-no" title="branch not covered">function (target) {</span> <span class="cstat-no" title="statement not covered">for (var i = 1; i &lt; arguments.length; i++) { <span class="cstat-no" title="statement not covered">var source = arguments[i]; <span class="cstat-no" title="statement not covered"></span>for (var key in source) { <span class="cstat-no" title="statement not covered">if (Object.prototype.hasOwnProperty.call(source, key)) { <span class="cstat-no" title="statement not covered">target[key] = source[key]; </span>} </span>} </span>} <span class="cstat-no" title="statement not covered"></span>return target; </span>};</span>
 &nbsp;
 exports['default'] = syncHistoryWithStore;
 &nbsp;
 var _reducer = require('./reducer');
 &nbsp;
-var defaultSelectLocationState = <span class="fstat-no" title="function not covered" >function defaultSelectLocationState(state) {</span>
-<span class="cstat-no" title="statement not covered" >  return state.routing;</span>
+var defaultSelectLocationState = <span class="fstat-no" title="function not covered">function defaultSelectLocationState(state) {</span>
+<span class="cstat-no" title="statement not covered">  return state.routing;</span>
 };
 &nbsp;
 /**
@@ -552,138 +550,139 @@ var defaultSelectLocationState = <span class="fstat-no" title="function not cove
  * event, the router will be updated appropriately and can transition to the
  * correct router state.
  */
-<span class="fstat-no" title="function not covered" >function syncHistoryWithStore(history, store) {</span>
-<span class="cstat-no" title="statement not covered" >  var _ref = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {},</span>
+<span class="fstat-no" title="function not covered">function syncHistoryWithStore(history, store) {</span>
+<span class="cstat-no" title="statement not covered">  var _ref = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {},</span>
       _ref$selectLocationSt = _ref.selectLocationState,
       selectLocationState = _ref$selectLocationSt === undefined ? defaultSelectLocationState : _ref$selectLocationSt,
       _ref$adjustUrlOnRepla = _ref.adjustUrlOnReplay,
       adjustUrlOnReplay = _ref$adjustUrlOnRepla === undefined ? true : _ref$adjustUrlOnRepla;
 &nbsp;
   // Ensure that the reducer is mounted on the store and functioning properly.
-<span class="cstat-no" title="statement not covered" >  if (typeof selectLocationState(store.getState()) === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error('Expected the routing state to be available either as `state.routing` ' + 'or as the custom expression you can specify as `selectLocationState` ' + 'in the `syncHistoryWithStore()` options. ' + 'Ensure you have added the `routerReducer` to your store\'s ' + 'reducers via `combineReducers` or whatever method you use to isolate ' + 'your reducers.');</span>
+<span class="cstat-no" title="statement not covered">  if (typeof selectLocationState(store.getState()) === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">    throw new Error('Expected the routing state to be available either as `state.routing` ' + 'or as the custom expression you can specify as `selectLocationState` ' + 'in the `syncHistoryWithStore()` options. ' + 'Ensure you have added the `routerReducer` to your store\'s ' + 'reducers via `combineReducers` or whatever method you use to isolate ' + 'your reducers.');</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var initialLocation = void 0;</span>
-<span class="cstat-no" title="statement not covered" >  var isTimeTraveling = void 0;</span>
-<span class="cstat-no" title="statement not covered" >  var unsubscribeFromStore = void 0;</span>
-<span class="cstat-no" title="statement not covered" >  var unsubscribeFromHistory = void 0;</span>
-<span class="cstat-no" title="statement not covered" >  var currentLocation = void 0;</span>
+<span class="cstat-no" title="statement not covered">  var initialLocation = void 0;</span>
+<span class="cstat-no" title="statement not covered">  var isTimeTraveling = void 0;</span>
+<span class="cstat-no" title="statement not covered">  var unsubscribeFromStore = void 0;</span>
+<span class="cstat-no" title="statement not covered">  var unsubscribeFromHistory = void 0;</span>
+<span class="cstat-no" title="statement not covered">  var currentLocation = void 0;</span>
 &nbsp;
   // What does the store say about current location?
-<span class="cstat-no" title="statement not covered" >  var getLocationInStore = <span class="fstat-no" title="function not covered" >function getLocationInStore(useInitialIfEmpty) {</span></span>
-<span class="cstat-no" title="statement not covered" >    var locationState = selectLocationState(store.getState());</span>
-<span class="cstat-no" title="statement not covered" >    return locationState.locationBeforeTransitions || (useInitialIfEmpty ? initialLocation : undefined);</span>
+<span class="cstat-no" title="statement not covered">  var getLocationInStore = <span class="fstat-no" title="function not covered">function getLocationInStore(useInitialIfEmpty) {</span></span>
+<span class="cstat-no" title="statement not covered">    var locationState = selectLocationState(store.getState());</span>
+<span class="cstat-no" title="statement not covered">    return locationState.locationBeforeTransitions || (useInitialIfEmpty ? initialLocation : undefined);</span>
   };
 &nbsp;
   // Init initialLocation with potential location in store
-<span class="cstat-no" title="statement not covered" >  initialLocation = getLocationInStore();</span>
+<span class="cstat-no" title="statement not covered">  initialLocation = getLocationInStore();</span>
 &nbsp;
   // If the store is replayed, update the URL in the browser to match.
-<span class="cstat-no" title="statement not covered" >  if (adjustUrlOnReplay) {</span>
-<span class="cstat-no" title="statement not covered" >    var handleStoreChange = <span class="fstat-no" title="function not covered" >function handleStoreChange() {</span></span>
-<span class="cstat-no" title="statement not covered" >      var locationInStore = getLocationInStore(true);</span>
-<span class="cstat-no" title="statement not covered" >      if (currentLocation === locationInStore || initialLocation === locationInStore) {</span>
-<span class="cstat-no" title="statement not covered" >        return;</span>
+<span class="cstat-no" title="statement not covered">  if (adjustUrlOnReplay) {</span>
+<span class="cstat-no" title="statement not covered">    var handleStoreChange = <span class="fstat-no" title="function not covered">function handleStoreChange() {</span></span>
+<span class="cstat-no" title="statement not covered">      var locationInStore = getLocationInStore(true);</span>
+<span class="cstat-no" title="statement not covered">      if (currentLocation === locationInStore || initialLocation === locationInStore) {</span>
+<span class="cstat-no" title="statement not covered">        return;</span>
       }
 &nbsp;
       // Update address bar to reflect store state
-<span class="cstat-no" title="statement not covered" >      isTimeTraveling = true;</span>
-<span class="cstat-no" title="statement not covered" >      currentLocation = locationInStore;</span>
-<span class="cstat-no" title="statement not covered" >      history.transitionTo(_extends({}, locationInStore, {</span>
+<span class="cstat-no" title="statement not covered">      isTimeTraveling = true;</span>
+<span class="cstat-no" title="statement not covered">      currentLocation = locationInStore;</span>
+<span class="cstat-no" title="statement not covered">      history.transitionTo(_extends({}, locationInStore, {</span>
         action: 'PUSH'
       }));
-<span class="cstat-no" title="statement not covered" >      isTimeTraveling = false;</span>
+<span class="cstat-no" title="statement not covered">      isTimeTraveling = false;</span>
     };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    unsubscribeFromStore = store.subscribe(handleStoreChange);</span>
-<span class="cstat-no" title="statement not covered" >    handleStoreChange();</span>
+<span class="cstat-no" title="statement not covered">    unsubscribeFromStore = store.subscribe(handleStoreChange);</span>
+<span class="cstat-no" title="statement not covered">    handleStoreChange();</span>
   }
 &nbsp;
   // Whenever location changes, dispatch an action to get it in the store
-<span class="cstat-no" title="statement not covered" >  var handleLocationChange = <span class="fstat-no" title="function not covered" >function handleLocationChange(location) {</span></span>
+<span class="cstat-no" title="statement not covered">  var handleLocationChange = <span class="fstat-no" title="function not covered">function handleLocationChange(location) {</span></span>
     // ... unless we just caused that location change
-<span class="cstat-no" title="statement not covered" >    if (isTimeTraveling) {</span>
-<span class="cstat-no" title="statement not covered" >      return;</span>
+<span class="cstat-no" title="statement not covered">    if (isTimeTraveling) {</span>
+<span class="cstat-no" title="statement not covered">      return;</span>
     }
 &nbsp;
     // Remember where we are
-<span class="cstat-no" title="statement not covered" >    currentLocation = location;</span>
+<span class="cstat-no" title="statement not covered">    currentLocation = location;</span>
 &nbsp;
     // Are we being called for the first time?
-<span class="cstat-no" title="statement not covered" >    if (!initialLocation) {</span>
+<span class="cstat-no" title="statement not covered">    if (!initialLocation) {</span>
       // Remember as a fallback in case state is reset
-<span class="cstat-no" title="statement not covered" >      initialLocation = location;</span>
+<span class="cstat-no" title="statement not covered">      initialLocation = location;</span>
 &nbsp;
       // Respect persisted location, if any
-<span class="cstat-no" title="statement not covered" >      if (getLocationInStore()) {</span>
-<span class="cstat-no" title="statement not covered" >        return;</span>
+<span class="cstat-no" title="statement not covered">      if (getLocationInStore()) {</span>
+<span class="cstat-no" title="statement not covered">        return;</span>
       }
     }
 &nbsp;
     // Tell the store to update by dispatching an action
-<span class="cstat-no" title="statement not covered" >    store.dispatch({</span>
+<span class="cstat-no" title="statement not covered">    store.dispatch({</span>
       type: _reducer.LOCATION_CHANGE,
       payload: location
     });
   };
-<span class="cstat-no" title="statement not covered" >  unsubscribeFromHistory = history.listen(handleLocationChange);</span>
+<span class="cstat-no" title="statement not covered">  unsubscribeFromHistory = history.listen(handleLocationChange);</span>
 &nbsp;
   // History 3.x doesn't call listen synchronously, so fire the initial location change ourselves
-<span class="cstat-no" title="statement not covered" >  if (history.getCurrentLocation) {</span>
-<span class="cstat-no" title="statement not covered" >    handleLocationChange(history.getCurrentLocation());</span>
+<span class="cstat-no" title="statement not covered">  if (history.getCurrentLocation) {</span>
+<span class="cstat-no" title="statement not covered">    handleLocationChange(history.getCurrentLocation());</span>
   }
 &nbsp;
   // The enhanced history uses store as source of truth
-<span class="cstat-no" title="statement not covered" >  return _extends({}, history, {</span>
+<span class="cstat-no" title="statement not covered">  return _extends({}, history, {</span>
     // The listeners are subscribed to the store instead of history
-    listen: <span class="fstat-no" title="function not covered" >function listen(listener) {</span>
+    listen: <span class="fstat-no" title="function not covered">function listen(listener) {</span>
       // Copy of last location.
-<span class="cstat-no" title="statement not covered" >      var lastPublishedLocation = getLocationInStore(true);</span>
+<span class="cstat-no" title="statement not covered">      var lastPublishedLocation = getLocationInStore(true);</span>
 &nbsp;
       // Keep track of whether we unsubscribed, as Redux store
       // only applies changes in subscriptions on next dispatch
-<span class="cstat-no" title="statement not covered" >      var unsubscribed = false;</span>
-<span class="cstat-no" title="statement not covered" >      var unsubscribeFromStore = store.subscribe(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        var currentLocation = getLocationInStore(true);</span>
-<span class="cstat-no" title="statement not covered" >        if (currentLocation === lastPublishedLocation) {</span>
-<span class="cstat-no" title="statement not covered" >          return;</span>
+<span class="cstat-no" title="statement not covered">      var unsubscribed = false;</span>
+<span class="cstat-no" title="statement not covered">      var unsubscribeFromStore = store.subscribe(<span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">        var currentLocation = getLocationInStore(true);</span>
+<span class="cstat-no" title="statement not covered">        if (currentLocation === lastPublishedLocation) {</span>
+<span class="cstat-no" title="statement not covered">          return;</span>
         }
-<span class="cstat-no" title="statement not covered" >        lastPublishedLocation = currentLocation;</span>
-<span class="cstat-no" title="statement not covered" >        if (!unsubscribed) {</span>
-<span class="cstat-no" title="statement not covered" >          listener(lastPublishedLocation);</span>
+<span class="cstat-no" title="statement not covered">        lastPublishedLocation = currentLocation;</span>
+<span class="cstat-no" title="statement not covered">        if (!unsubscribed) {</span>
+<span class="cstat-no" title="statement not covered">          listener(lastPublishedLocation);</span>
         }
       });
 &nbsp;
       // History 2.x listeners expect a synchronous call. Make the first call to the
       // listener after subscribing to the store, in case the listener causes a
       // location change (e.g. when it redirects)
-<span class="cstat-no" title="statement not covered" >      if (!history.getCurrentLocation) {</span>
-<span class="cstat-no" title="statement not covered" >        listener(lastPublishedLocation);</span>
+<span class="cstat-no" title="statement not covered">      if (!history.getCurrentLocation) {</span>
+<span class="cstat-no" title="statement not covered">        listener(lastPublishedLocation);</span>
       }
 &nbsp;
       // Let user unsubscribe later
-<span class="cstat-no" title="statement not covered" >      return <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        unsubscribed = true;</span>
-<span class="cstat-no" title="statement not covered" >        unsubscribeFromStore();</span>
+<span class="cstat-no" title="statement not covered">      return <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">        unsubscribed = true;</span>
+<span class="cstat-no" title="statement not covered">        unsubscribeFromStore();</span>
       };
     },
 &nbsp;
 &nbsp;
     // It also provides a way to destroy internal listeners
-    unsubscribe: <span class="fstat-no" title="function not covered" >function unsubscribe() {</span>
-<span class="cstat-no" title="statement not covered" >      if (adjustUrlOnReplay) {</span>
-<span class="cstat-no" title="statement not covered" >        unsubscribeFromStore();</span>
+    unsubscribe: <span class="fstat-no" title="function not covered">function unsubscribe() {</span>
+<span class="cstat-no" title="statement not covered">      if (adjustUrlOnReplay) {</span>
+<span class="cstat-no" title="statement not covered">        unsubscribeFromStore();</span>
       }
-<span class="cstat-no" title="statement not covered" >      unsubscribeFromHistory();</span>
+<span class="cstat-no" title="statement not covered">      unsubscribeFromHistory();</span>
     }
   });
 }
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 14:58:19 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:16:26 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
