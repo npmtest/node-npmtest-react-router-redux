@@ -1,7 +1,10 @@
-# test coverage for  [react-router-redux (v4.0.8)](https://github.com/reactjs/react-router-redux#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-react-router-redux.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-router-redux) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-router-redux.svg)](https://travis-ci.org/npmtest/node-npmtest-react-router-redux)
+# npmtest-react-router-redux
+
+#### test coverage for  [react-router-redux (v4.0.8)](https://github.com/reactjs/react-router-redux#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-react-router-redux.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-router-redux) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-router-redux.svg)](https://travis-ci.org/npmtest/node-npmtest-react-router-redux)
+
 #### Ruthlessly simple bindings to keep react-router and redux in sync
 
-[![NPM](https://nodei.co/npm/react-router-redux.png?downloads=true)](https://www.npmjs.com/package/react-router-redux)
+[![NPM](https://nodei.co/npm/react-router-redux.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-router-redux)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-react-router-redux/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-router-redux/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-router-redux/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-router-redux/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-react-router-redux/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-react-router-redux/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-react-router-redux/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-react-router-redux/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-react-router-redux%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-router-redux/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-react-router-redux/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-router-redux/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-react-router-redux%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-router-redux/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.html](https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-react-router-redux/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-react-router-redux/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-react-router-redux/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-react-router-redux/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-router-redux/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-router-redux/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-react-router-redux/build/screenCapture.npmPackageListing.svg)
 
@@ -98,17 +107,14 @@
     "main": "lib/index",
     "maintainers": [
         {
-            "name": "jlongster",
-            "email": "longster@gmail.com"
+            "name": "jlongster"
         },
         {
-            "name": "timdorr",
-            "email": "timdorr@timdorr.com"
+            "name": "timdorr"
         }
     ],
     "name": "react-router-redux",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/reactjs/react-router-redux.git"
